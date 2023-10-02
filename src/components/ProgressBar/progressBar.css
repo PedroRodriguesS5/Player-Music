@@ -1,0 +1,18 @@
+.time {
+    color: #a2a2a2;
+
+    font-size: 1.3rem;
+}
+
+.progress {
+    width: 600px;
+}
+
+@media(max-width: 480px) {
+
+    .progress {
+        position: absolute;
+        bottom: 30%;
+        width: 200px;
+    }
+}

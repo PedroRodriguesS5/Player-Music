@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+
+
+  background: linear-gradient(180deg, #0C0505 0%, #3A3535 47.92%, #5E5858 100%);
+}

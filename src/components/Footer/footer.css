@@ -1,0 +1,181 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: linear-gradient(180deg, #302d2d 0%, rgba(133, 130, 130, 0.00) 100%);
+    position: fixed;
+    bottom: 0;
+
+    width: 100vw;
+    height: 15vh;
+
+    border-radius: 20px 20px 0px 0px;
+}
+
+.current-artist {
+    display: flex;
+    align-items: center;
+
+    width: 15%;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.song img {
+    width: 50px;
+    height: 50px;
+}
+
+.title-artist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.song h2 {
+    color: #FFF;
+    font-size: 2rem;
+
+    font-weight: 700;
+}
+
+.song span {
+    color: #a2a2a2;
+    font-size: 1.3rem;
+
+    font-weight: 400;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.controler-player {
+    display: flex;
+
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.controler-player img {
+    width: 30px;
+    height: 30px;
+}
+
+.play-pause-btn img {
+    width: 60px;
+    height: 50px;
+}
+
+
+button img:hover {
+    transform: scale(1.1);
+}
+
+
+.controler-player button {
+    all: unset;
+}
+
+.audio-control {
+    display: flex;
+    align-items: center;
+
+    gap: 0.6rem;
+    margin-right: 2%;
+
+    width: 10%;
+}
+
+
+.audio-control button {
+    all: unset;
+
+    /* height: 100px; */
+    color: #fff;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        background: #8f83832f;
+
+
+        width: 100%;
+        height: 20vh;
+    }
+
+    .current-artist {
+        width: 100%;
+    }
+
+    .current-artist img {
+        display: none;
+    }
+
+    .current-artist span {
+        font-size: 1.1rem;
+    }
+
+    .current-artist h2 {
+        font-size: 1.7rem;
+    }
+
+
+
+    .play-pause-btn img {
+        width: 100%;
+    }
+
+    button:hover {
+        transform: scale(1);
+    }
+
+    .controler-player button img {
+        width: 25px;
+    }
+
+    .audio-control {
+        display: none;
+    }
+}
+
+@media(min-width: 481px) and (max-width: 768px) {
+    footer {
+
+        /* position: fixed; */
+        height: 20vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 20vh;
+        gap: 1rem;
+    }
+
+    .current-artist img {
+        display: none;
+    }
+
+    .audio-control {
+        display: none;
+    }
+}
